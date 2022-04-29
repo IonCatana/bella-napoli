@@ -31,7 +31,26 @@ class PizzaSeeder extends Seeder
                 'description' => 'pomodoro, mozzarella , zucchine, melanzane',
                 'price' => 6.0,
                 'img' => 'https://'
+            ],
+            [
+                'name' => 'salsiccia',
+                'description' => 'pomodoro, mozzarella , salsiccia',
+                'price' => 7.0,
+                'img' => 'https://'
+            ],
+            [
+                'name' => 'quatro stagioni',
+                'description' => 'pomodoro, mozzarella , olive nere, funghi champignon, prosciutto cotto',
+                'price' => 8.0,
+                'img' => 'https://'
+            ],
+            [
+                'name' => 'bianca',
+                'description' => 'mozzarella , zucchine',
+                'price' => 6.0,
+                'img' => 'https://'
             ]
+
 
         ];
 
