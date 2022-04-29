@@ -60,7 +60,7 @@ class PizzaController extends Controller
      */
     public function edit(Pizza $pizza)
     {
-        //
+        return view('pizzas.edit', compact('pizza'));
     }
 
     /**
@@ -72,7 +72,16 @@ class PizzaController extends Controller
      */
     public function update(Request $request, Pizza $pizza)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+            'price' => 'required|numeric',
+            'img' => 'nullable'
+        ]);
+
+        $data = $request->all();
+        $pizza->update($data);
+        return redirect()->route('pizzas.show', $pizza);
     }
 
     /**

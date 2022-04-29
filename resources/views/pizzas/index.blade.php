@@ -19,6 +19,9 @@
           <td>
             <a href=" {{route('pizzas.show', $pizza)}} ">Vedi</a>
           </td>
+          <td>
+            <a href=" {{route('pizzas.edit', $pizza)}} ">Modifica</a>
+          </td>
         </tr>
       @endforeach
     </tbody>
