@@ -16,7 +16,9 @@
           <td> {{$pizza->name}} </td>
           <td> {{$pizza->description}} </td>
           <td> {{$pizza->price}} &euro;</td>
-          <td></td>
+          <td>
+            <a href=" {{route('pizzas.show', $pizza)}} ">Vedi</a>
+          </td>
         </tr>
       @endforeach
     </tbody>
